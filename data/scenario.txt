@@ -1,0 +1,24 @@
+# Dynamic Air Traffic Control Scenario Schedule (30 Ticks)
+# Lines can be SPAWN or EVENT
+# SPAWN: TICK, CALLSIGN, AIRCRAFT_TYPE, AIRLINE, ORIGIN, DESTINATION, PASSENGERS, FUEL, SECTOR, RUNWAY, PRIORITY
+# EVENT: TICK, TYPE, TARGET_CALLSIGN_OR_SECTOR, DESCRIPTION
+# Priority: 1=War, 2=Hijack, 3=Cyber, 4=Missing, 5=Fuel, 6=Medical, 7=Weather, 8=Mechanical, 9=Normal
+
+SPAWN: 4, TG910, B777-300, ThaiAirways, BKK, ISB, 260, 15, Air Segment, Runway 09, 9
+SPAWN: 5, SV720, A330-300, Saudia, JED, ISB, 280, 14, Cache Fly, Runway 04, 7
+
+EVENT: 6, CYBER, Syntax Sector, Cyber attack detected targeting western radar transponders!
+
+SPAWN: 8, TK714, A350-900, TurkishAirlines, IST, ISB, 295, 16, Alpha Tree, Runway 17, 9
+EVENT: 10, MISSING, MS880, EgyptAir Boeing 737 MS880 lost transponder near Alpha Tree! Last seen sector: Alpha Tree.
+
+SPAWN: 12, GF512, B787-900, GulfAir, BAH, ISB, 210, 11, Air Segment, Runway 09, 9
+EVENT: 14, WEATHER, Air Segment, Severe microburst windshear detected near Runway 09!
+
+SPAWN: 16, WY341, B737-MAX8, OmanAir, MCT, ISB, 160, 10, Cache Fly, Runway 04, 8
+EVENT: 18, WAR, Alpha Tree, Unidentified hostile combat aircraft intruding near Restricted Zone!
+
+SPAWN: 20, KU205, A320neo, KuwaitAirways, KWI, ISB, 150, 12, Syntax Sector, Runway 12, 9
+EVENT: 22, MECHANICAL, KU205, Hydraulic pressure loss on flight KU205! Urgent landing required.
+
+SPAWN: 24, EY231, B787-1000, Etihad, AUH, ISB, 330, 9, Alpha Tree, Runway 17, 5

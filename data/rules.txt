@@ -1,0 +1,33 @@
+# Air Traffic Control (ATC) Simulator Game Rules
+# Configuration File
+STARTING_CREDIBILITY=100
+MAX_TICKS=30
+ACTIONS_PER_TURN=2
+TICK_DURATION_SECONDS=30
+WIN_TICK=30
+
+# Emergency Deadlines (in ticks from spawn/detection)
+DEADLINE_WAR=2
+DEADLINE_HIJACK=3
+DEADLINE_CYBER=3
+DEADLINE_MISSING=4
+DEADLINE_FUEL=5
+DEADLINE_MEDICAL=4
+DEADLINE_WEATHER=4
+DEADLINE_MECHANICAL=5
+
+# Credibility Penalties and Rewards
+REWARD_LANDING=2
+REWARD_MISSING_FOUND=5
+PENALTY_CRASH=30
+PENALTY_MEDICAL=15
+PENALTY_WEATHER_DIVERT=10
+PENALTY_CYBER_DISABLE=20
+PENALTY_BREACH=25
+
+# Losing Conditions:
+# 1. Credibility reaches 0
+# 2. Fatal unhandled crash (fuel/mechanical/weather)
+# 3. Hijack interception deadline expired
+# 4. Cyber attack disables control tower (tick 4)
+# 5. War incident uncountered within 2 ticks
