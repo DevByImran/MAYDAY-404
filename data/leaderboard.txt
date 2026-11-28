@@ -1,0 +1,8 @@
+# Air Traffic Control Simulator Leaderboard
+# Format: DATE_TIME, CRO_NAME, FINAL_TICK, CREDIBILITY, FLIGHTS_LANDED, EMERGENCIES_RESOLVED, OUTCOME, REASON
+2026-11-01 14:30:00, OFFICER_ASAD, 30, 94, 11, 4, VICTORY, Successfully maintained safe airspace through 30 ticks
+2026-11-03 10:15:22, CRO_FATIMA, 30, 88, 10, 3, VICTORY, Airport secured with optimal radar routing
+2026-11-08 19:45:10, CRO_HAMZA, 16, 0, 4, 1, DEFEAT, Fuel exhaustion crash in Syntax Sector
+2026-11-14 10:00:00, TEST_OFFICER, 30, 100, 12, 4, VICTORY, Unit test simulation complete
+2026-11-14 10:00:00, TEST_OFFICER, 30, 100, 12, 4, VICTORY, Unit test simulation complete
+2026-11-14 10:00:00, TEST_OFFICER, 30, 100, 12, 4, VICTORY, Unit test simulation complete
